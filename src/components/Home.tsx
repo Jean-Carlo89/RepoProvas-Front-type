@@ -1,5 +1,8 @@
 import styled from 'styled-components/macro'
 
+import {Container,ChooseExams,ButtonHolder} from './genericStyledComponents'
+import {Link} from 'react-router-dom'
+
 export default function Home(){
     
     return(
@@ -8,56 +11,23 @@ export default function Home(){
                 <p>Texto para escolher provas</p>
                 
                 <ButtonHolder>
-                    <button onClick={()=>console.log('fui clicado')}>professores</button>
-                    <button onClick={()=>console.log('fui clicado')}>disciplinas</button>
+                   
+                    <button onClick={()=>console.log('fui clicado')}>
+                        <Link to="/disciplines">
+                            disciplinas
+                         </Link>
+                    </button>
+                   
+                    
+                    {/* <Link> */}
+                        <button onClick={()=>console.log('fui clicado')}>professores</button>
+                    {/* </Link> */}
+                    
                 </ButtonHolder>
             </ChooseExams>
         </Container>
     )
 }
 
-const Container = styled.div`
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: gray;
 
-    
 
-`
-
-const ChooseExams = styled.div`
-    width: 400px;
-    height: 200px;
-    border: 1px solid  red;
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    p{
-        font-size: 30px;
-        width: 100%;
-        text-align: center;
-    }
-`
-
-const ButtonHolder = styled.div`
-    margin-top: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-
-   
-
-    button{
-        width: 40%;
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        height: 30px;
-        font-size: 15px;
-    }
-`

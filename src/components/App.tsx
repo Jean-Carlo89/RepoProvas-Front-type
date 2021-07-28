@@ -5,6 +5,7 @@ import "../css/reset.css"
 
 //component imports
 import Home from './Home'
+import Disciplines from './Disciplines'
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
       <Switch>
         <Route path='/home' exact>
           <Home/>
+        </Route>
+
+        <Route path='/disciplines' exact>
+          <Disciplines/>
         </Route>
       </Switch>
     </Router>
