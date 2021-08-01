@@ -6,6 +6,8 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     background-color: gray;
+    flex-direction:column;
+    align-items: center;
 
     
 
@@ -16,7 +18,7 @@ const ChooseExams = styled.div`
     width: 400px;
     height: 200px;
     border: 1px solid  red;
-    margin-top: 200px;
+   // margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;

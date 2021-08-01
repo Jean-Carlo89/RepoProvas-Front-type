@@ -8,10 +8,12 @@ import Home from './Home'
 import Disciplines from './Disciplines'
 
 function App() {
+ 
   return (
+    
     <Router>
       <Switch>
-        <Route path='/home' exact>
+        <Route path='/' exact>
           <Home/>
         </Route>
 
@@ -23,6 +25,8 @@ function App() {
     
     
   );
+
+  
 }
 
 export default App;
